@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СтудентМаркет | Учебный проект</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- НЕВИДИМЫЕ ПЕРЕКЛЮЧАТЕЛИ СТРАНИЦ -->
+    <input type="radio" name="page-nav" id="tab-home" checked>
+    <input type="radio" name="page-nav" id="tab-catalog">
+    <input type="radio" name="page-nav" id="tab-about">
+    <input type="radio" name="page-nav" id="tab-cart">
+
+    <!-- ШАПКА САЙТА -->
+    <header>
+        <div class="header-container">
+            <label for="tab-home" class="logo">🎓 СтудентМаркет</label>
+            <nav>
+                <label for="tab-home" class="nav-btn btn-home">Главная</label>
+                <label for="tab-catalog" class="nav-btn btn-catalog">Каталог</label>
+                <label for="tab-about" class="nav-btn btn-about">О нас</label>
+            </nav>
+            <div class="cart-status">
+                <label for="tab-cart" class="nav-btn btn-cart">🛒 Корзина</label>
+            </div>
+        </div>
+    </header>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main class="container">
+
+        <!-- РАЗДЕЛ: ГЛАВНАЯ СТРАНИЦА -->
+        <section class="page-section section-home">
+            <!-- Главный баннер -->
+            <div class="hero">
+                <div class="hero-content">
+                    <h2>Все для успешной учебы в одном месте</h2>
+                    <p>Скидки первокурсникам и отличные цены для каждого студента!</p>
+                    <label for="tab-catalog" class="btn">Перейти в каталог</label>
+                </div>
+            </div>
+
+            <!-- Преимущества -->
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Быстрая доставка</h3>
+                    <p>Привезем прямо к дверям вашего общежития или корпуса.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Студенческие цены</h3>
+                    <p>Делаем скидки по студенческому билету и зачетке.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Проверено в бою</h3>
+                    <p>Все гаджеты и канцелярия одобрены старостами групп.</p>
+                </div>
+            </div>
+
+            <!-- НОВЫЙ БЛОК: АКЦИЯ ДНЯ -->
+            <div class="promo-banner">
+                <div class="promo-text">
+                    <span class="badge">🔥 ХИТ СЕССИИ</span>
+                    <h3>Набор "Антистресс-Студент"</h3>
+                    <p>Умный блокнот + вечная ручка + термокружка со скидкой 40%!</p>
+                    <div class="promo-meta">
+                        <span>Осталось: <strong>4 шт.</strong></span>
+                        <span>Успей до конца недели!</span>
+                    </div>
+                </div>
+                <label for="tab-catalog" class="btn btn-dark">Забрать со скидкой</label>
+            </div>
+
+            <!-- НОВЫЙ БЛОК: СТАТИСТИКА В ЦИФРАХ -->
+            <div class="stats-section">
+                <div class="stat-box">
+                    <div class="stat-number">1500+</div>
+                    <div class="stat-desc">Сданных курсовых</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-desc">Довольных клиентов</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">0 мг</div>
+                    <div class="stat-desc">Потраченных нервов</div>
+                </div>
+            </div>
+
+            <!-- НОВЫЙ БЛОК: ОТЗЫВЫ -->
+            <div class="reviews-section">
+                <h3 class="block-title">Что говорят студенты</h3>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <p class="review-text">«Купила настольную лампу перед бессонной ночью чертежей. Она спасла мой диплом! Сдала на отлично.»</p>
+                        <div class="review-author">Алена, 4 курс</div>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">«Рюкзак просто топ, влезает и ноут, и три толстые методички, и контейнер с едой. Лямки крепкие!»</p>
+                        <div class="review-author">Максим, 2 курс</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- РАЗДЕЛ: КАТАЛОГ -->
+        <section class="page-section section-catalog">
+            <h2 class="page-title">Каталог товаров</h2>
+            <div class="product-grid">
+                
+                <div class="product-card">
+                    <div class="image-placeholder">📚</div>
+                    <h3>Умный блокнот</h3>
+                    <p class="product-desc">Синхронизирует записи со смартфоном.</p>
+                    <div class="price">650 руб.</div>
+                    <label for="tab-cart" class="btn">Купить</label>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-placeholder">🖱️</div>
+                    <h3>Беспроводная мышь</h3>
+                    <p class="product-desc">Бесшумные клики для лекций.</p>
+                    <div class="price">1200 руб.</div>
+                    <label for="tab-cart" class="btn">Купить</label>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-placeholder">💡</div>
+                    <h3>Настольная лампа</h3>
+                    <p class="product-desc">Три режима света для ночной учебы.</p>
+                    <div class="price">1500 руб.</div>
+                    <label for="tab-cart" class="btn">Купить</label>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-placeholder">☕</div>
+                    <h3>Термокружка</h3>
+                    <p class="product-desc">Держит кофе горячим до 8 часов.</p>
+                    <div class="price">850 руб.</div>
+                    <label for="tab-cart" class="btn">Купить</label>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-placeholder">🎒</div>
+                    <h3>Рюкзак для ноутбука</h3>
+                    <p class="product-desc">Влагозащитный с USB-портом.</p>
+                    <div class="price">2900 руб.</div>
+                    <label for="tab-cart" class="btn">Купить</label>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-placeholder">🖊️</div>
+                    <h3>Набор маркеров</h3>
+                    <p class="product-desc">Для красивых и понятных конспектов.</p>
+                    <div class="price">450 руб.</div>
+                    <label for="tab-cart" class="btn">Купить</label>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- РАЗДЕЛ: О НАС -->
+        <section class="page-section section-about">
+            <div class="about-wrapper">
+                <div class="about-info">
+                    <h2>О нашем проекте</h2>
+                    <p>Приветствуем в «СтудентМаркет»! Этот интернет-магазин был создан в рамках учебного студенческого задания. Мы хотели спроектировать удобный интерфейс, где каждый студент сможет быстро найти полезные вещи для повседневной учебы.</p>
+                    
+                    <h3>Наша миссия</h3>
+                    <p>Помогать грызть гранит науки с комфортом и без лишних трат. Мы выбираем только самые нужные товары — от качественной канцелярии до современных гаджетов.</p>
+                    
+                    <h3>Где мы находимся?</h3>
+                    <p>Наш главный офис — это третья парта у окна в компьютерном классе. Но наш сайт обрабатывает ваши клики 24 часа в сутки и 7 дней в неделю!</p>
+                </div>
+
+                <!-- НОВЫЙ БЛОК: ИНФОРМАЦИЯ О СТУДЕНТЕ (КОНТАКТЫ) -->
+                <div class="student-contacts">
+                    <h3>Автор проекта</h3>
+                    <div class="contact-box">
+                        <p><strong>Разработчик:</strong></p>
+                        <p>Иванов Иван Иванович</p>
+                        <p><strong>Группа:</strong> ИКТО-01-24</p>
+                        <p><strong>Дисциплина:</strong></p>
+                        <p>Веб-технологии и дизайн</p>
+                        <p><strong>Контакты:</strong></p>
+                        <p>student@university.edu</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- НОВЫЙ БЛОК: АККОРДЕОН FAQ (ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ) БЕЗ JS -->
+            <div class="faq-section">
+                <h3 class="block-title">Часто задаваемые вопросы</h3>
+                
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-1" class="faq-checkbox">
+                    <label for="faq-1" class="faq-question">Можно ли оплатить заказ стипендиальной картой? <span>+</span></label>
+                    <div class="faq-answer">
+                        <p>Да, мы принимаем к оплате любые карты МИР, Visa и Mastercard, включая социальные и стипендиальные карты любых банков.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-2" class="faq-checkbox">
+                    <label for="faq-2" class="faq-question">Как работает доставка в общежитие? <span>+</span></label>
+                    <div class="faq-answer">
+                        <p>Наш курьер свяжется с вами за 15 минут до прибытия. Доставка осуществляется до главного входа (вахты) вашего общежития.</p>
+                    </div>
+                </div>
+
